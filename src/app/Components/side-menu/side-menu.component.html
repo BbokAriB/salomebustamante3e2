@@ -1,4 +1,4 @@
-<button (click)=" alternateVisibility()"></button>
+<button (click)=" alternateVisibility()" [style.display]="visibleMenu == false ? 'flex': 'none'"></button>
 <section class="sidemenu-container"
 [style.background-color]="theme"
 [style.width]="widthMenu + '%'"
