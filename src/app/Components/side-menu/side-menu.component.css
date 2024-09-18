@@ -8,7 +8,7 @@
 .sidemenu-container{
     width:50%;
     height: 100vh;/*altura de la pantalla*/
-    background-color: pink;
+    background-color: rgb(255, 112, 136);
     display:flex;
     flex-direction: column;
     justify-content: start;
@@ -30,7 +30,8 @@
         text-wrap: wrap;
         display: flex;
         gap:10px;
-        font-size:22px;
+        font-size:15px;
+        color: white;
     }
 .items p {/*nombre*/
     font-size: 10px;
@@ -39,6 +40,7 @@
     display: flex;
     gap:10px;
     font-family:Arial, Helvetica, sans-serif;
+    color: white;
     
 }
 .items {
@@ -46,26 +48,30 @@
         
         justify-content: space-around;
         align-items:center;
-        gap:20px;
+        gap:3px;
         margin-left:3px;
 }
 .button .btn {
-    border: none; /* Quita el borde */
-    padding: 15px 20px; /* Ajusta el padding para hacerlos más altos */
-    transition: all 0.3s ease; /* Transición suave */
-}  
-
-.button .btn {
     border: none; 
-    padding: 15px 20px; 
-    transition: all 0.3s ease;
-    margin: 10px; /* Agrega margen alrededor de los botones */
-    border-radius: 20px; /* Redondea las esquinas de los botones */
+    padding: 8px 12px; /* Padding reducido */
+    transition: all 0.3s ease; 
+    margin: 5px; /* Margen reducido */ 
+    border-radius: 20px; 
+    font-size: 10px;
   }
   
   .button .btn:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
   }
+  
+  .button .btn:nth-child(1):hover { /* Celeste para el primer botón */
+    background-color: lightblue;
+  }
+  
+  .button .btn:nth-child(2):hover { /* Lila para el segundo botón */
+    background-color: rgb(235, 192, 255);
+  }
+  
   
   
   .img1{
