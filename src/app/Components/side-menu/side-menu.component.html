@@ -1,0 +1,43 @@
+<button (click)=" alternateVisibility()"></button>
+<section class="sidemenu-container"
+[style.background-color]="theme"
+[style.width]="widthMenu + '%'"
+[style.display]="visibleMenu == true ? 'flex': 'none'"
+>
+    <div class="items">
+        <div class= "profile-image">
+            <img src="./gato (2).svg" alt="image.svg">
+        </div>
+        
+         <p>{{userName}}</p>
+         <!-- interpolacion de datos activados -->
+         <button class="img1" (click)="alternateVisibility()">
+            <img src="
+            ./flechasi.svg" alt="image.svg"></button>
+          
+        <!-- ejecutamos event binding -->
+    </div>
+
+    <div class="item">
+        <p><span>🗓️</span>Dashboard</p>
+    </div>
+    
+    <div class="item">
+        <p><span>☀️</span>Profile
+        </p>
+    </div>
+
+    
+        <div class="button">
+        <button class="btn" (click)="setTheme('red')">Change Color</button>
+        <button class="btn" (click)="setSize()">Change Size</button>
+        <!-- ejecutamos event binding -->
+        </div>
+    
+    
+</section>    
+    
+    
+
+    
+    
